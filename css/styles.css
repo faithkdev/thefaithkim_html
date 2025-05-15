@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+body {
+    background-color: #ffc0cb;
+}
+
+
+
+.typewriter {
+    display:inline-block;
+    overflow: hidden; /* Ensures the contest is not revealed until the animation */
+    border-right: .20em solid orange; /* the typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line*/
+    margin: 0 auto; /* Gives the scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    animation:
+        typing 2.5s steps(20, end),
+        blink-caret .5s step-end infinite;
+
+}
+
+@keyframes typing {
+    from {width: 0}
+    to { width:  8ch}
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+h1 {
+    font-family:'Sacramento';
+    margin: 0;
+
+}
+
+.logo {
+    height: 30%;
+    width: 30%;
+    min-width: 200px;
+}
+
+.image-container {
+    display: flex;
+}
+
+.button {
+    background-color: magenta;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: blue;
+    color: yellow;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.button-shadow {
+    background-color: darkgoldenrod;
+    width: 100px;
+    height: 60px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.button:hover {
+    height: 52px;;
+    background-color: lightpink;
+    color: red;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.center-container {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-icon {
+    margin-right: 4px;
+}
+
+.footer-icon:hover {
+    background-color: #ffa9b8;
+    border-radius: 8px;
+    cursor: pointer;
+}
