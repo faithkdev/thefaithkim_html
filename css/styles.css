@@ -116,9 +116,17 @@ h1 {
 
 .heading {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.heading-start {
-    flex: 1;
-    width: 100%;
+@media (max-width: 600px) {
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-icon {
+        align-self: center;
+    }
 }
