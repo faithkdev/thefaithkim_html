@@ -14,23 +14,26 @@
 <body>
     <link rel="preload" as="image" href="./images/profilepic_result.webp">
     <link rel="preload" as="image" href="./images/profilepic_small_result.webp">
-    <div class="main-container">
+    <div class="main-container fade">
         <div class="heading">
             <h1 class="typewriter">About Faith</h1>
-            <img class="home-icon" src="./images/homeIcon_result.webp" loading="lazy" decode="async"
-                alt="Return to home" />
+            <a href="index.html">
+                <img id=" home-icon" src="./images/homeicon.webp" loading="lazy" decode="async"
+                alt="Return to home">
+            </a>
         </div>
         <div class="main-content">
             Hello world
-            <div class="float-right-picture">
-                <picture>
-                    <source media="(max-width: 600px)" srcset="./images/profilepic_small_result.webp">
-                    <source media="(min-width: 601px)" srcset="./images/profilepic_result.webp">
-                    <img aria-hidden="true" loading="lazy" decode="async" src="./images/profilepic.jpg">
-                </picture>
-            </div>
-
+            <picture class="float-right-picture">
+                <source class="float-right-picture" media="(max-width: 600px)"
+                    srcset="./images/profilepic_small_result.webp">
+                <source class="float-right-picture" media="(min-width: 601px)" srcset="./images/profilepic_result.webp">
+                <img class="float-right-picture" aria-hidden="true" loading="lazy" decode="async"
+                    src="./images/profilepic.jpg">
+            </picture>
         </div>
+
+    </div>
     </div>
 </body>
 
