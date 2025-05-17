@@ -102,12 +102,15 @@ h1 {
 }
 
 .main-content {
+    display: flex;
     height: 100%;
     background-color: white;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 10px;
     border-radius: 8px;
+    padding: 28px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .home-icon {
@@ -130,10 +133,37 @@ h1 {
     .home-icon {
         align-self: center;
     }
+
+    .description  {
+        order: 2;
+    }
+
+    .float-right-picture {
+        order: 1;
+    }
+
+    .main-content {
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 601px) {
+    .description, .float-right-picture {
+        flex: 1;
+    }
+
+    .description {
+        order: 0;
+    }
+
+    .float-right-picture {
+        order: 1;
+    }
+    
 }
 
 .float-right-picture {
-    float: right;
     animation: animateToLeft 1.5s ease;
     -webkit-animations: animateToLeft 1.5s ease;
 };
@@ -155,4 +185,10 @@ h1 {
 @keyframes fade {
     from { opacity: 0%; }
     to { opacity: 100% }
+}
+
+.description {
+    font-family: 'Georgia';
+    color: gray;
+    margin-right: 12px;
 }
