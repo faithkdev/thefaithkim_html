@@ -11,7 +11,7 @@ body {
     overflow: hidden; /* Ensures the contest is not revealed until the animation */
     border-right: .20em solid orange; /* the typewriter cursor */
     white-space: nowrap; /* Keeps the content on a single line*/
-    margin: 0 auto; /* Gives the scrolling effect as the typing happens */
+    margin: 0; /* Gives the scrolling effect as the typing happens */
     letter-spacing: .15em;
     animation:
         typing 2.5s steps(20, end),
@@ -63,6 +63,7 @@ h1 {
     transform: perspective(1000px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
     box-shadow: 0px 5px darkgoldenrod;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .button:hover {
@@ -105,5 +106,19 @@ h1 {
     background-color: white;
     overflow: auto;
     padding: 10px;
-    border-radius: 8px;    
+    border-radius: 8px;
+}
+
+.home-icon {
+    width: 50px;
+    height: auto;
+}
+
+.heading {
+    display: flex;
+}
+
+.heading-start {
+    flex: 1;
+    width: 100%;
 }
