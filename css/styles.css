@@ -102,7 +102,7 @@ h1 {
 }
 
 .main-content {
-    height: 200px;
+    height: 100%;
     background-color: white;
     overflow: auto;
     padding: 10px;
@@ -130,3 +130,7 @@ h1 {
         align-self: center;
     }
 }
+
+.float-right-picture {
+    float: right;
+};
