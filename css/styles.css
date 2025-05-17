@@ -235,4 +235,8 @@ h1 {
 
 .article:hover {
     border: 2px solid gold;
-};
+}
+
+.footer {
+    margin-top: 50px;
+}
