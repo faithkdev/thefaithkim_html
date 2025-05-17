@@ -140,6 +140,8 @@ h1 {
 
     .float-right-picture {
         order: 1;
+        animation: animateDown 1.5s ease;
+        -webkit-animations: animateDown 1.5s ease;
     }
 
     .main-content {
@@ -160,13 +162,13 @@ h1 {
     .float-right-picture {
         order: 1;
     }
+
+    .float-right-picture {
+        animation: animateToLeft 1.5s ease;
+        -webkit-animations: animateToLeft 1.5s ease;
+    }
     
 }
-
-.float-right-picture {
-    animation: animateToLeft 1.5s ease;
-    -webkit-animations: animateToLeft 1.5s ease;
-};
 
 @keyframes animateToLeft {
     from { transform: translateX(100%); }
@@ -176,6 +178,16 @@ h1 {
 @-webkit-keyframes animateToLeft {
     from { transform: translateX(100%); }
     to { transform: translateX(0); }
+}
+
+@keyframes animateDown {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(0); }
+}
+
+@-webkit-keyframes animateDown {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(0);  }
 }
 
 .fade {
