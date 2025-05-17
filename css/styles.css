@@ -147,6 +147,11 @@ h1 {
     .main-content {
         justify-content: center;
     }
+
+    .article {
+        max-width: 300px;
+        max-height: 200px;
+    }
     
 }
 
@@ -166,6 +171,11 @@ h1 {
     .float-right-picture {
         animation: animateToLeft 1.5s ease;
         -webkit-animations: animateToLeft 1.5s ease;
+    }
+
+    .article {
+        max-width: 500px;
+        max-height: 280px;
     }
     
 }
@@ -222,8 +232,6 @@ h1 {
     padding: 12px;
     text-align: center;
     width: fit-content;
-    max-width: 500px;
-    max-height: 280px;
     margin-top: 28px;
     overflow: hidden;
     border: 2px solid transparent;
