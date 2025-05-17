@@ -204,3 +204,35 @@ h1 {
     color: gray;
     margin-right: 12px;
 }
+
+#featured-in {
+    margin-top: 28px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.article {
+    border-radius: 4px;
+    background-color: white;
+    padding: 12px;
+    text-align: center;
+    width: fit-content;
+    max-width: 500px;
+    max-height: 280px;
+    margin-top: 28px;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.article > :nth-child(2) {
+    padding: 24px;
+}
+
+.article:hover {
+    border: 2px solid gold;
+};
