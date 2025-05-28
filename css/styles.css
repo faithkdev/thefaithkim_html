@@ -248,3 +248,7 @@ h1 {
 .footer {
     margin-top: 50px;
 }
+
+.picture-blocks {
+    display: block;
+}
