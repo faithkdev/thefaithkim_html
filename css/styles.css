@@ -7,11 +7,15 @@ body {
 
 
 .typewriter {
-    display:inline-block;
-    overflow: hidden; /* Ensures the contest is not revealed until the animation */
-    border-right: .20em solid orange; /* the typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line*/
-    margin: 0; /* Gives the scrolling effect as the typing happens */
+    display: inline-block;
+    overflow: hidden;
+    /* Ensures the contest is not revealed until the animation */
+    border-right: .20em solid orange;
+    /* the typewriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line*/
+    margin: 0;
+    /* Gives the scrolling effect as the typing happens */
     letter-spacing: .15em;
     animation:
         typing 2.5s steps(20, end),
@@ -20,17 +24,29 @@ body {
 }
 
 @keyframes typing {
-    from {width: 0}
-    to { width:  8ch}
+    from {
+        width: 0
+    }
+
+    to {
+        width: 8ch
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
 }
 
 h1 {
-    font-family:'Sacramento';
+    font-family: 'Sacramento';
     margin: 0;
 
 }
@@ -134,7 +150,7 @@ h1 {
         align-self: center;
     }
 
-    .description  {
+    .description {
         order: 2;
     }
 
@@ -152,15 +168,22 @@ h1 {
         max-width: 300px;
         max-height: 200px;
     }
-    
+
     .floatToRight {
         padding-top: 20px;
     }
-    
+
+    .projects-section {
+        margin-top: 100px;
+        display: grid;
+    }
+
 }
 
 @media (min-width: 601px) {
-    .description, .float-right-picture {
+
+    .description,
+    .float-right-picture {
         flex: 1;
     }
 
@@ -181,7 +204,14 @@ h1 {
         max-width: 500px;
         max-height: 280px;
     }
-    
+
+    .projects-section {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
+
 }
 
 .floatToRight {
@@ -190,33 +220,63 @@ h1 {
 }
 
 @keyframes animateToRight {
-    from { transform: translateX(-5%);}
-    to { transform: translateX(0);}
+    from {
+        transform: translateX(-5%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 @-webkit-keyframes animateToRight {
-    from { transform: translateX(-5%);}
-    to { transform: translateX(0);}
+    from {
+        transform: translateX(-5%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 @keyframes animateToLeft {
-    from { transform: translateX(100%); }
-    to { transform: translateX(0); }
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 @-webkit-keyframes animateToLeft {
-    from { transform: translateX(100%); }
-    to { transform: translateX(0); }
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 @keyframes animateDown {
-    from { transform: translateY(-100px); }
-    to { transform: translateY(0); }
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 @-webkit-keyframes animateDown {
-    from { transform: translateY(-100px); }
-    to { transform: translateY(0);  }
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .fade {
@@ -224,8 +284,13 @@ h1 {
 }
 
 @keyframes fade {
-    from { opacity: 0%; }
-    to { opacity: 100% }
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%
+    }
 }
 
 .description {
@@ -256,7 +321,7 @@ h1 {
     border: 2px solid transparent;
 }
 
-.article > :nth-child(2) {
+.article> :nth-child(2) {
     padding: 24px;
 }
 
@@ -268,6 +333,14 @@ h1 {
     margin-top: 50px;
 }
 
-.picture-blocks {
+.box {
     display: block;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.project-year {
+    margin: 0;
 }
