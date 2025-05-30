@@ -153,6 +153,10 @@ h1 {
         max-height: 200px;
     }
     
+    .floatToRight {
+        padding-top: 20px;
+    }
+    
 }
 
 @media (min-width: 601px) {
@@ -178,6 +182,21 @@ h1 {
         max-height: 280px;
     }
     
+}
+
+.floatToRight {
+    animation: animateToRight 2.5s ease;
+    -webkit-animations: animateToRight 2.5s ease;
+}
+
+@keyframes animateToRight {
+    from { transform: translateX(-5%);}
+    to { transform: translateX(0);}
+}
+
+@-webkit-keyframes animateToRight {
+    from { transform: translateX(-5%);}
+    to { transform: translateX(0);}
 }
 
 @keyframes animateToLeft {
