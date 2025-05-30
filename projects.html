@@ -24,6 +24,7 @@
             </a>
         </div>
         <div class="main-content">
+            <div class="flexbox">
                 <div class="description">
                     <h1 class="floatToRight">Technical Work</h1>
                     <p>I currently work as a fullstack engineer at CaptivateIQ. I work
@@ -48,18 +49,20 @@
                         builds with new features to enhance user experience and settlement processes.
                     </p>
                 </div>
-                <div>
-                    <picture class="box">
+                <div class="company-picture">
+                    <!-- Company pictures -->
+                    <picture>
                         <source media="(max-width:600px)" srcset="./images/projects/captivateiq_small_result.webp">
                         <source media="(min-width:601px)" srcset="./images/projects/captivateiq_large_result.webp">
-                        <img src="./images/projects/captivateiq.jpg"
+                        <img loading="lazy" decode="async" src="./images/projects/captivateiq.jpg"
                             alt="a group photo of engineers and product managers from CaptivateIQ">
                     </picture>
-                    <picture class="box">
+                    <picture>
                         <source media="(max-width:600px)" srcset="./images/projects/cme_small_result.webp">
                         <source media="(min-width:601px)" srcset="./images/projects/cme_large_result.webp">
-                        <img src="./images/projects/cme_jpg.jpg" alt="Picture of a CME Group booth at Grace Hopper">
+                        <img loading="lazy" decode="async" src="./images/projects/cme_jpg.jpg" alt="Picture of a CME Group booth at Grace Hopper">
                     </picture>
+                </div>
                 </div>
             <div class="projects-section description">
                 <div>
@@ -67,7 +70,7 @@
                     <picture>
                         <source media="(max-width:600px)" srcset="./images/projects/apieceofjava_small_result.webp">
                         <source media="(min-width:601px)" srcset="./images/projects/apieceofjava_result.webp">
-                        <img src="./images/projects/apieceofjava.jpeg"
+                        <img loading="lazy" decode="async" src="./images/projects/apieceofjava.jpeg"
                             alt="introduction to java book written by Faith Kim called A Piece of Java">
                     </picture>
                 </div>
@@ -83,6 +86,22 @@
                     <p>
                         Tools: Kindle Create, Java, KDP (Kindle Direct Publishing), Procreate
                     </p>
+                </div>
+                <div>
+                    <h2 class="project-year">2019</h2>
+                    <picture>
+                        <source media="(max-width:600px)" srcset="./images/projects/gaminglab_small_result.webp">
+                        <source media="(min-width:601px)" srcset="./images/projects/gaminglab_result.webp">
+                        <img loading="lazy" decode="async" src="./images/projects/gaminglab.png" alt="Picture of the gaming lab web page developed by Faith">
+                    </picture>
+                </div>
+                <div>
+                    <h2>Gaming Lab Search Engine</h2>
+                    <p>Smith College provides a space to explore video games on campus, varying from consoles like PS4, PC, Nintendo Switch, and so on.
+                        The struggle lied in how to keep track of allt he games the Lab had in its inventory. To solve this problem a search engine
+                        for the Gaming Lab had been created through this web application.
+                    </p>
+                    <p>Dev Tools: Spring, PostgreSQL, H2, Heroku, ReactJS, Python</p>
                 </div>
             </div>
         </div>
