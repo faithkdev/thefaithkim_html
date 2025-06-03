@@ -20,3 +20,4 @@ for (let button of buttons) {
         button.style.setProperty('--rotateY', '0deg');
     });
 }
+
