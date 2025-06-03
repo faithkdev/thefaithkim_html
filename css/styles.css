@@ -184,7 +184,6 @@ h1 {
     .floatToRight {
         padding-top: 20px;
     }
-
 }
 
 @media (min-width: 601px) {
@@ -242,6 +241,11 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         gap: 12px;
         justify-content: center;
+    }
+
+    .card {
+        max-inline-size: 400px;
+        height: 400px;
     }
 }
 
@@ -393,12 +397,22 @@ h1 {
 }
 
 .card {
-    border: 1px solid gray;
-    height: 400px;
+    border: 1px solid lightgray;
     overflow: auto;
-    max-inline-size: 400px;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     border-radius: 2px;
+    max-width: 600px;
+    height: 100%;
 }
 
+.card-info {
+    color: gray;
+    margin: 16px;
+}
+
+.card-image {
+    width: 100%;
+}
