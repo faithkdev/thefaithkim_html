@@ -4,7 +4,6 @@ function checkOverflow(card) {
     const readMoreButton = card.querySelector('.read-more-btn');
     const isOverflowing = textArea.clientHeight > contentArea.clientHeight;
 
-    console.log({isOverflowing, textArea: textArea.clientHeight, contentArea: contentArea.clientHeight})
     if (isOverflowing) {
         readMoreButton.style.display = 'inline-block';
     } else {
