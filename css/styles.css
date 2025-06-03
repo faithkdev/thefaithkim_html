@@ -414,6 +414,7 @@ h1 {
 .card-info {
     color: gray;
     margin: 16px;
+    overflow: hidden;
 }
 
 .card-image {
