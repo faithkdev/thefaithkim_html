@@ -408,6 +408,7 @@ h1 {
     max-width: 600px;
     display: flex;
     flex-direction: column;
+    transition: height 0.1s ease;
 }
 
 .card-info {
@@ -421,6 +422,7 @@ h1 {
 
 .card.expanded {
     height: 100%;
+    transition: height 0.1s ease;
 }
 
 .read-more-btn {
@@ -429,5 +431,10 @@ h1 {
     left: 50%;
     z-index: 10;
     transform: translateX(-50%);
-
+    border: none;
+    background-color: none;
+    font-family:'Times New Roman';
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
 }
