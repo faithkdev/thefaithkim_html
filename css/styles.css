@@ -142,6 +142,12 @@ h1 {
 
 @media (max-width: 600px) {
 
+    .deathless-pictures {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 84px);
+    }
+
     .projects-section {
         margin-top: 100px;
         display: grid;
@@ -193,6 +199,12 @@ h1 {
 }
 
 @media (min-width: 601px) {
+
+    .deathless-pictures {
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 140px 140px;
+    }
 
     .projects-section {
         margin-top: 100px;
@@ -388,11 +400,7 @@ h1 {
     margin: 0;
 }
 
-.deathless-pictures {
-    display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 140px 140px;
-}
+
 
 .other-works-section {
     flex-basis: 100%;
