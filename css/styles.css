@@ -190,8 +190,8 @@ h1 {
 
     .article {
         max-width: 300px;
-        max-height: 200px;
     }
+
 
     .floatToRight {
         padding-top: 20px;
@@ -232,7 +232,6 @@ h1 {
 
     .article {
         max-width: 500px;
-        max-height: 280px;
     }
 }
 
@@ -362,20 +361,24 @@ h1 {
 }
 
 .articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+    grid-column-gap: 40px;
+    justify-content: center;
+    max-width: 900px;
 }
 
 
 .article {
+    display: flex;
+    flex-direction: column;
     border-radius: 4px;
     background-color: white;
     padding: 12px;
     text-align: center;
-    width: fit-content;
+    width: 100%;
     margin-top: 28px;
-    overflow: hidden;
+    min-height: 450px;
     border: 2px solid transparent;
 }
 
