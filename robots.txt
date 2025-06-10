@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://thefaithkim-html.pages.dev/sitemap.xml
