@@ -366,6 +366,7 @@ h1 {
     grid-column-gap: 40px;
     justify-content: center;
     max-width: 900px;
+    margin-inline: auto;
 }
 
 

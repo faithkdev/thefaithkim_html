@@ -24,7 +24,7 @@ function checkAllCards() {
             card.classList.toggle('expanded');
             readMoreButton.textContent = card.classList.contains('expanded') ? 'Read less' : 'Read more';
         });
-    
+
         checkOverflow(card);
     });
 }
@@ -37,4 +37,6 @@ window.addEventListener('resize', () => {
     }, 200);
 });
 
-window.addEventListener('DOMContentLoaded', checkAllCards)
+window.addEventListener('load', () => {
+    setTimeout(checkAllCards, 1000);
+});
